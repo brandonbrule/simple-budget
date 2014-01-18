@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Budget</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+
+<body>
+
+  <h1>Simple Budget</h1>
+  <form>
+    <label for="paycheck">Paycheck</label>
+    <input name="paycheck" id="paycheck" placeholder="How much do you get on your paycheck - ex. 2200" type="text" >
+
+    <label for="paysPerYear">How many times a month do you get paid?</label>
+    <div class="pays-per-year radio-options">
+      <input name="paysPerYear" id="paysPerYear24" type="radio" value="24"><label>Twice a Month</label>
+      <input name="paysPerYear" id="paysPerYear12" type="radio" value="12"><label>Once a Month</label>
+    </div>
+
+    <label for="rent">Monthly Rent Payments Including Utilities</label>  
+    <input name="rent" id="rent" placeholder="How much is your rent and utilities? - ex. 800" type="text" >
+
+    <label for="monthlyBills">Total Montly Payments - guestimates are fine.</label>    
+    <input name="monthlyBills" id="monthlyBills" placeholder="How much are your montly bills? - ex. 350" type="text" >
+
+    <label for="savings">What percentage of remaining money would you like to save?</label>    
+    <input name="savings" id="savings" placeholder="How much would you like to save? ex. 25" type="text" >
+
+    <input type="button" name="submit" id="submit" >
+  </form>
+
+  <div class="stats">
+    <h2>Salary information - like a baus</h2>    
+    <div class="results annual-income">  
+      <p>Total Annual Income : <span id="annualIncome-view"></span></p>
+      <p>Total Income Per Month: <span id="monthlyIncome-view"></span></p>
+      <p>Total Income Per Week: <span id="weeklyIncome-view"></span></p>
+      <p>Total Income Per Day: <span id="dailyIncome-view"></span></p>
+      <p>Total Income Per Hour: <span id="hourlyIncome-view"></span></p>
+      <p>Total Income Per Minute: <span id="minutesIncome-view"></span></p>
+      <p>Total Income Per Second: <span id="secondsIncome-view"></span></p>
+    </div>    
+
+    <h2>Total bills paid... :(</h2>  
+    <div class="results bills">  
+      <p>Monthly Payments : <span id="monthlyBills-view"></span></p>
+      <p>Monthly Rent : <span id="monthlyRentCost-view"></span></p>
+      <p>Total Paments Per Year : <span id="annualBills-view"></span></p>
+      <p>Total Rent Per Year : <span id="annualRentCost-view"></span></p>
+      <p>Total Cost Monthly : <span id="monthlyTotalBills-view"></span></p>
+      <p>Total Cost Annually : <span id="annualTotalBills-view"></span></p>
+    </div>
+
+    <h2>What you've got left to spend!</h2>
+    <h3>But make sure you save. Don't be greedy.</h3>  
+    <div class="results horray">
+      <p>Annual Remaining Income :  <span id="remainingAnnualIncome-view"></span></p>
+      <p>Monthly Remaining Income : <span id="remainingMonthlyIncome-view"></span></p>
+      <p>What you have left per week : <span id="remainingWeeklyIncome-view"></span></p>
+      <p>Per Day ? <span id="remainingDailyIncome-view"></span></p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <h2>Potential savings</h2>    
+    <div class="results annual-income">  
+      <p>Total savings per year :  <span id="annualRemainingSavings-view"></span></p>
+      <p>Total monthly savings : <span id="monthlyRemainingSavings-view"></span></p>
+      <p>Total weekly savings : <span id="weeklyRemainingSavings-view"></span></p>
+      <p>Savings per day? <span id="dailyRemainingSavings-view"></span></p>
+    </div>
+
+    <h2>What you've got left after savings!</h2>  
+    <div class="results horray">
+      <p>Money Left After Savings Yearly :  <span id="annualRemainingIncomeAfterSavings-view"></span></p>
+      <p>Monthly Remaining : <span id="monthlyRemainingIncomeAfterSavings-view"></span></p>
+      <p>What you have left per week : <span id="weeklyRemainingIncomeAfterSavings-view"></span></p>
+      <p>Per Day ? <span id="dailyRemainingIncomeAfterSavings-view"></span></p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <h2>Your networth in 24 hours</h2>
+    <div class="results annual-income-24">  
+      <p>Total Income Per Day: <span id="dailyIncome24Hour-view"></span></p>
+      <p>Total Income Per Hour: <span id="hourlyIncome24Hour-view"></span></p>
+      <p>Total Income Per Minute: <span id="minutesIncome24Hour-view"></span></p>
+      <p>Total Income Per Second: <span id="secondsIncome24Hour-view"></span></p>
+    </div>
+  </div>
+
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
