@@ -1,0 +1,60 @@
+body{
+  margin:0 auto;
+  padding:2%;
+  font-family:georgia;
+  font-size:0.875em;
+  color:#3d3d3d;
+}
+
+h1{ font-family:arial, helvetica; text-transform:uppercase; }
+h2{ font-size:1.1em; margin:2em 0 0.65em 0; }
+h2:first-child{ margin-top:0em;}
+h3{ font-size:1em;font-weight:300;}
+p{ font-weight:100; padding:0.85em; margin:0; }
+form{
+  border:1px solid #ececec;
+  background:#ececec;
+  border-top-right-radius:12px;
+  border-top-left-radius:12px;
+  padding:1em;
+  margin-bottom:3em;
+  width:320px;
+  float:left;
+}
+input{
+  display:block;
+  width:100%;
+  padding:0.5em;
+  margin:1em 0 3em 0;
+  box-sizing:border-box;
+}
+
+p:nth-child(odd){ background:rgba(0,0,0,0.10); }
+p:nth-child(even){ background:rgba(0,0,0,0.05); }
+p:last-child{ background:rgba(0,0,0,0.15); }
+
+span{ font-weight:600; float:right; }
+
+.annual-income{background:#CFF09E;}
+.bills{background:#FFC48C;}
+.horray{background:#CDFFFF;}
+
+/* Layout */
+.stats{
+  width:320px;
+  float:left;
+  margin:0 0 2% 2%;
+  padding:0 0 2% 2%;
+  border-left:1px solid #ccc;
+}
+.pays-per-year label{
+  font-size:0.875em;
+}
+input[type="radio"]{
+  display:inline;
+  width:25px;
+  margin-left:1em;
+}
+input[type="radio"]:first-child{
+  margin-left:0;
+}
